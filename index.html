@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <script type="text/javascript" src="js/app.js"></script>
   <link href="web/css/app.css" rel="stylesheet" type="text/css" />
@@ -10,20 +11,27 @@
 
 <body>
   <header>
-    <a href="mailto:didier@didierclin.ovh">Gmail</a>
-    <a href="#">Images</a>
-    <a href="#">ApplicationsG</a>
-    <a href="#">Connexion</a>
+    <span id="entete">
+      <a href="mailto:didier@didierclin.ovh">Gmail</a>
+      <a href="#">Images</a>
+      <a href="#">ApplicationsG</a>
+      <a href="#" class="connect">Connexion</a>
+    </span>
   </header>
 
   <section>
-    <img src="web/img/google.png" alt="Image goooogle" title="mon moteur de recherche" />
-    <div id="query">
-      <input type="search" name="query" value="">
-    </div>
-    <div class="">
-      <input type="submit" name="name" value="Recherche Gooogle">
-      <input type="submit" name="name" value="J'ai de la chance">
+    <div class="viewport">
+
+      <a href="#">
+        <img src="web/img/google.png" alt="Image goooogle" title="mon moteur de recherche" />
+      </a>
+      <div id="query">
+        <input type="search" name="query" value="" maxlength="2048">
+      </div>
+      <div class="bouton">
+        <input type="submit" name="name" value="Recherche Gooogle">
+        <input type="submit" name="name" value="J'ai de la chance">
+      </div>
     </div>
   </section>
 

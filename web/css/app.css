@@ -1,44 +1,73 @@
+html, body { height : 100%; }
 body {
    font-size: 1em;
+   font-family: arial, sans-serif;
+   margin: 0;
 }
 header {
+   line-height: 1.6em;
    position: relative;
    z-index: 9999;
    top: 0;
-   display: inline;
-   line-height: 1.5em;
-   font-size: 0.8em;
+   /*display: inline-block;*/
+   line-height: 2em;
+   font-size: 0.9em;
 }
 header a {
+  position: relative;
    padding: 0 0.6em;
    color: #333;
-   display: block;
-   float: left;
+   float: right;
    text-decoration: none;
+}
+.connect{
+  background-color: blue;
+  color: white;
 }
 section {
    clear: both;
-   height: 80%;
+   min-height: 100%;
+   top: 30%;
    color: inherit;
 }
+.centre{
+  min-height: 80%;
+  margin: auto;
+}
 img {
-   width: 15em;
-   margin-top: 40%;
-   top: 40%;
+   /*width: 15em;
+   height: auto;
+   margin: 0 30% 0 30%;
    display: block;
-   /*     height: auto;
+   /*     height: auto;*/
 
    margin-left: auto;
-   margin-right: auto;*/
+   margin-right: auto;
    margin: auto;
    overflow: hidden;
 }
 #query {
    display: block;
+   width: 20em;
+   margin: auto;
+}
+.bouton:hover{
+  font-weight: bold;
+  border: .1em;
 }
 footer {
+   line-height: 1.6em;
+   width: 100%;
+   background-color: #e0dcdc;
+   display: inline-block;
    position: fixed;
    bottom: 0;
+   left: 0;
+}
+footer a {
+   color: rgb(93, 89, 91);
+   text-decoration: none;
+   margin: 1em 0 1em 2em;
 }
 .gauche {
    float: left;

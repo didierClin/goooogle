@@ -1,59 +1,73 @@
-html, body { height : 100%; }
 body {
+   background-color: #fff;
    font-size: 1em;
    font-family: arial, sans-serif;
    margin: 0;
 }
+
+/*#entete { */
+
+
+/* c'est la section (header) qui doit etre mise a dte*/
+
+
+/*si id utilisé les block s'empilent depuis la droite*/
+
 header {
-   line-height: 1.6em;
-   position: relative;
-   z-index: 9999;
-   top: 0;
-   /*display: inline-block;*/
    line-height: 2em;
+   position: fixed;
+   z-index: 9999;
+   top: 1.5em;
+   right: 4%;
+   display: block;
    font-size: 0.9em;
 }
-header a {
-  position: relative;
-   padding: 0 0.6em;
+#entete a {
    color: #333;
-   float: right;
    text-decoration: none;
+   margin: 1em 0 1em 2em;
 }
-.connect{
-  background-color: blue;
-  color: white;
+
+/* Bouton connexion*/
+
+.connect {
+   background-color: #4683EA;
+   padding: 0.5em;
+   color: #fff;
+   text-decoration: none;
+   margin: 1em 0 1em 2em;
 }
 section {
    clear: both;
    min-height: 100%;
-   top: 30%;
+   top: 20%;
    color: inherit;
 }
-.centre{
-  min-height: 80%;
-  margin: auto;
-}
 img {
-   /*width: 15em;
+   position: relative;
+   width: 20em;
    height: auto;
-   margin: 0 30% 0 30%;
    display: block;
-   /*     height: auto;*/
-
    margin-left: auto;
    margin-right: auto;
    margin: auto;
+   padding-top: 20%;
    overflow: hidden;
 }
 #query {
    display: block;
    width: 20em;
+   height: 2em;
    margin: auto;
 }
-.bouton:hover{
-  font-weight: bold;
-  border: .1em;
+.bouton {
+  text-decoration: none;
+  border-style: none;
+}
+.bouton:hover {
+   font-weight: bold;
+   color: black;
+   border: .2em;
 }
 footer {
    line-height: 1.6em;

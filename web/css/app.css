@@ -4,14 +4,8 @@ body {
    font-family: arial, sans-serif;
    margin: 0;
 }
-
-/*#entete { */
-
-
-/* c'est la section (header) qui doit etre mise a dte*/
-
-
-/*si id utilisé les block s'empilent depuis la droite*/
+/* c'est la section totale (header) qui doit etre mise a dte*/
+/*si id (entete) est utilisé les block s'empilent depuis la droite*/
 
 header {
    line-height: 2em;
@@ -29,7 +23,6 @@ header {
 }
 
 /* Bouton connexion*/
-
 .connect {
    background-color: #4683EA;
    padding: 0.5em;
@@ -45,26 +38,30 @@ section {
 }
 img {
    position: relative;
-   width: 20em;
+   width: 25em;
    height: auto;
    display: block;
-   margin-left: auto;
-   margin-right: auto;
    margin: auto;
    padding-top: 20%;
    overflow: hidden;
 }
+/*Champ query*/
 #query {
    display: block;
-   width: 20em;
+   width: 25em;
    height: 2em;
-   margin: auto;
+   margin: 1.8em auto;
 }
-.bouton {
-  text-decoration: none;
-  border-style: none;
+.bout {
+  width: 30%;
+  margin: auto;
 }
+/*
+   text-decoration: none;
+   border-style: none;
+}*/
 .bouton:hover {
+
    font-weight: bold;
    color: black;
    border: .2em;
